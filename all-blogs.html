@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Blogs - Global Scholars Gateway</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+    
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --secondary-color: #ff994f;
+            --primary-color: #333333;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+        }
+        body { margin: 0; padding: 0; }
+        .navbar { background: var(--bg-color); padding: 1rem 5%; }
+    </style>
+    
+    <!-- Main stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+         <a href="index.html" style="color: var(--secondary-color);"><h1>Global Scholars Gateway</h1></a>
+         <p class="subtitle" style="color: black; margin-top: 5px;">Immigration Law Firm</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="index.html#services">Services</a></li>
+            <li><a href="index.html#destinations">Destinations<sup>29+</sup></a></li>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#blogs" class="active">Blogs</a></li>
+            <li><a href="index.html#events">Events</a></li>
+            <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- All Blogs Section -->
+    <section class="all-blogs">
+        <div class="all-blogs-container">
+            <h1>Latest Articles & Insights</h1>
+            <div class="blog-filters">
+                <div class="search-box">
+                    <input type="text" id="blogSearch" placeholder="Search blogs...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <div class="category-filters">
+                    <button class="filter-btn active" data-category="all">All</button>
+                    <button class="filter-btn" data-category="usa">USA</button>
+                    <button class="filter-btn" data-category="uk">UK</button>
+                    <button class="filter-btn" data-category="australia">Australia</button>
+                    <button class="filter-btn" data-category="scholarships">Scholarships</button>
+                    <button class="filter-btn" data-category="exam-prep">Exam Prep</button>
+                </div>
+            </div>
+            <div class="blogs-grid all-blogs-grid" id="allBlogsGrid">
+                <!-- Blog cards will be dynamically populated here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Global Scholars Gateway</h3>
+                <p>Your trusted partner in international education</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="index.html#services">Services</a></li>
+                    <li><a href="index.html#destinations">Destinations</a></li>
+                    <li><a href="index.html#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info@globalscholars.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Global Scholars Gateway. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="all-blogs.js"></script>
+</body>
+</html>

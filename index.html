@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Scholars Gateway</title>
+    <!-- Preload critical resources -->
+    <link rel="preload" href="styles.css" as="style">
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" as="style">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    <link rel="dns-prefetch" href="https://images.unsplash.com">
+
+    <!-- Critical CSS inline -->
+    <style>
+        :root {
+            --secondary-color: #ff994f;
+            --primary-color: #333333;
+            --text-color: #333333;
+            --bg-color: #ffffff;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: var(--bg-color);
+            padding: 1rem 5%;
+        }
+    </style>
+
+    <!-- Main stylesheets -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="logo">
+            <a href="index.html" style="color: var(--secondary-color);">
+                <h1>Global Scholars Gateway</h1>
+            </a>
+            <p class="subtitle" style="color: black; margin-top: 5px;">Immigration Law Firm</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home" class="active">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#destinations">Destinations<sup>29+</sup></a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#blogs">Blogs</a></li>
+            <li><a href="#events">Events</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="slideshow-container">
+            <div class="slide fade active">
+                <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?auto=format&w=1200&q=80"
+                    alt="University Campus" loading="lazy" decoding="async">
+                <div class="hero-content">
+                    <h1>Your Gateway to Global Education</h1>
+                    <p>Expert guidance for your international education journey</p>
+                    <a href="#contact" class="cta-button">Get Started</a>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&w=1200&q=80"
+                    alt="Students Studying" loading="lazy" decoding="async">
+                <div class="hero-content">
+                    <h1>Study in Top Universities</h1>
+                    <p>Access world-class education opportunities worldwide</p>
+                    <a href="#destinations" class="cta-button">Explore Destinations</a>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photos/a-group-of-people-in-graduation-gowns-posing-for-a-picture-cqlYVxXmEk0?auto=format&w=1200&q=80"
+                    alt="Graduation Ceremony" loading="lazy" decoding="async">
+                <div class="hero-content">
+                    <h1>Achieve Your Dreams</h1>
+                    <p>Join thousands of successful graduates worldwide</p>
+                    <a href="#contact" class="cta-button">Start Your Journey</a>
+                </div>
+            </div>
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80"
+                    alt="Student Success">
+                <div class="hero-content">
+                    <h1>Transform Your Future</h1>
+                    <p>Let us help you achieve your academic dreams</p>
+                    <a href="#services" class="cta-button">Our Services</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=1920&q=80"
+                    alt="Campus Life">
+                <div class="hero-content">
+                    <h1>Experience Campus Life</h1>
+                    <p>Immerse yourself in diverse and vibrant university cultures</p>
+                    <a href="#destinations" class="cta-button">Learn More</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?auto=format&fit=crop&w=1920&q=80"
+                    alt="Research Facilities">
+                <div class="hero-content">
+                    <h1>World-Class Research</h1>
+                    <p>Access cutting-edge research facilities and opportunities</p>
+                    <a href="#services" class="cta-button">Discover More</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&w=1920&q=80"
+                    alt="International Students">
+                <div class="hero-content">
+                    <h1>Global Community</h1>
+                    <p>Join a diverse community of international students</p>
+                    <a href="#about" class="cta-button">Join Us</a>
+                </div>
+            </div>
+
+            <div class="slide fade">
+                <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f" alt="Career Growth">
+                <div class="hero-content">
+                    <h1>Career Success</h1>
+                    <p>Build your path to professional excellence</p>
+                    <a href="#services" class="cta-button">Start Now</a>
+                </div>
+            </div>
+
+            <!-- Navigation dots -->
+            <div class="slide-dots">
+                <span class="dot active" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+                <span class="dot" onclick="currentSlide(4)"></span>
+                <span class="dot" onclick="currentSlide(5)"></span>
+                <span class="dot" onclick="currentSlide(6)"></span>
+                <span class="dot" onclick="currentSlide(7)"></span>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Global Scholars Gateway -->
+    <section>
+        <h1>About Global Scholars Gateway (Immigration Law Firm)</h1>
+        <p>Welcome to Global Scholars Gateway (Immigration Law Firm), your trusted partner in global education.
+            Celebrating 5 years of excellence, we have established ourselves as a leading force in international student
+            recruitment in Pakistan. We take pride in empowering countless students to achieve their academic dreams
+            across the UK, Australia, Canada, the USA, Europe, and Asia.</p>
+        <p>At Global Scholars Gateway, we are registered in 65 countries and 850 renowned institutions worldwide. We
+            prioritize compliance with high commission guidelines, ensuring a seamless admission process for students
+            worldwide. Our dedicated team of experts is committed to guiding you through every step—helping you identify
+            your goals, navigate your options, and fulfill admission requirements with ease.</p>
+        <p>We are more accessible than ever, ready to support students in unlocking global opportunities. Choose Global
+            Scholars Gateway and take the first step towards a brighter future!</p>
+    </section>
+
+    <!-- Our Mission -->
+    <section>
+        <h2>Our Mission: Simplifying Your Study Abroad Journey</h2>
+        <p>At Global Scholars Gateway (Immigration Law Firm), we are dedicated to transforming the foreign education
+            process by providing a one-stop platform for students aspiring to study abroad within a legal framework. As
+            a leading education consultancy, we take pride in offering seamless guidance and support every step of the
+            way.</p>
+        <p>Our global partner network spans across the UK, Canada, USA, Australia, Germany, Sweden, Hungary, Ireland,
+            New Zealand, Malaysia, Turkey, Cyprus, and the UAE, ensuring students have access to world-class
+            institutions in diverse regions.</p>
+        <p>At Global Scholars Gateway (Immigration Law Firm), we believe in standing by you from start to finish—helping
+            you discover the perfect study destination, offering expert career counseling, and ensuring you apply to
+            programs that align with your skills and aspirations.</p>
+    </section>
+
+    <!-- Expert Guidance -->
+    <section>
+        <h3>Expert Guidance</h3>
+        <p>Our experienced consultants provide personalized counseling to help you make informed decisions.</p>
+        <h3>24/7 Support</h3>
+        <p>Our dedicated team is always available to assist with applications, documentation, and compliance.</p>
+        <h3>Seamless Transition</h3>
+        <p>From admissions to pre-departure preparations, we make your journey stress-free. Your future starts
+            here—let’s shape it together!</p>
+    </section>
+
+    <!-- IELTS -->
+    <section>
+        <h2>IELTS – The World’s Leading English Language Test</h2>
+        <p>The International English Language Testing System (IELTS) is one of the most widely recognized English
+            proficiency tests, accepted across 140+ countries worldwide. Designed to assess language skills for
+            academic, professional, and immigration purposes, IELTS has been a trusted standard for over 30 years.</p>
+        <p>There are two main types of IELTS tests:</p>
+        <ul>
+            <li>Academic IELTS – For students applying to universities and higher education institutions.</li>
+            <li>General IELTS – For individuals seeking work opportunities or migration.</li>
+        </ul>
+        <p>Developed and managed by the British Council, IELTS continues to be the gold standard for English language
+            assessment, helping millions achieve their global aspirations. Prepare with confidence and take the first
+            step toward your future!</p>
+    </section>
+
+    <!-- French language -->
+    <section>
+        <h2>French language</h2>
+        <p>We are excited to offer a <b>comprehensive French language course</b> designed specifically for students
+            planning to study abroad. <b>Our program focuses</b> on building strong communication skills, <b>covering
+            essential grammar, vocabulary, and pronunciation</b> to help students confidently navigate academic and
+            social settings in French-speaking countries. With experienced instructors,interactive lessons, and
+            real-life conversation practice, we ensure that students develop fluency and cultural awareness. Whether
+            you're preparing for <b>university admissions, language proficiency exams, or simply aiming to enhance your
+            global opportunities,</b> our course provides the perfect foundation for success in a French-speaking
+            environment.</p>
+        <p><b>Join us and take the first step toward your international academic journey!</b></p>
+    </section>
+
+    <!-- PTE Academic -->
+    <section>
+        <h2>PTE Academic – Your Gateway to Global Opportunities</h2>
+        <p>PTE Academic is a computer-based English language test designed to assess your speaking, writing, reading,
+            and listening skills at an academic level. Recognized for its fast results and unbiased scoring, it is a top
+            choice for students and professionals worldwide.</p>
+        <ul>
+            <li>✅ Accepted by 3,500+ universities and institutions globally</li>
+            <li>✅ Recognized for study, professional registration, work permits, and immigration visas in Australia and
+                New Zealand</li>
+            <li>✅ AI-driven assessment for fair and accurate results</li>
+        </ul>
+        <p>Whether you're pursuing higher education, career advancement, or immigration, PTE Academic is your trusted
+            pathway to success. Take the test. Unlock your future!</p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fas fa-university"></i>
+                <h3>University Selection</h3>
+                <p>Expert guidance in choosing the right university based on your academic profile and career goals.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-file-alt"></i>
+                <h3>Application Assistance</h3>
+                <p>Complete support with university applications, documentation, and admission requirements.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-passport"></i>
+                <h3>Visa Guidance</h3>
+                <p>Comprehensive assistance with student visa applications and documentation.</p>
+            </div>
+            <div class="service-card">
+                <i class="fas fa-hands-helping"></i>
+                <h3>Career Counseling</h3>
+                <p>Professional guidance to align your study choices with career objectives.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Destinations Section -->
+    <section id="destinations" class="destinations">
+        <h2>Popular Study Destinations</h2>
+        <div class="destinations-preview-grid">
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=canada'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?auto=format&w=800&q=80"
+                    alt="Canada">
+                <div class="card-content">
+                    <h3>Canada</h3>
+                    <p>World-class education with work opportunities</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=germany'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1603573355706-3f15d98cf100?auto=format&w=800&q=80"
+                    alt="Germany">
+                <div class="card-content">
+                    <h3>Germany</h3>
+                    <p>Quality education with low tuition fees</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=australia'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&w=800&q=80"
+                    alt="Australia">
+                <div class="card-content">
+                    <h3>Australia</h3>
+                    <p>Innovative programs and vibrant culture</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=uk'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?auto=format&w=800&q=80" alt="UK">
+                <div class="card-content">
+                    <h3>United Kingdom</h3>
+                    <p>Traditional excellence in education</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 2rem;">
+            <a href="all-destinations.html" class="cta-button">More Destinations <sup>25+</sup></a>
+        </div>
+        <h2>Popular Destinations</h2>
+        <div class="destinations-grid">
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=usa'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1513635269975-59663e0ac1ad?auto=format&w=800&q=80" alt="USA">
+                <div class="card-content">
+                    <h3>United States</h3>
+                    <p>World's leading education system</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=uk'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1513026705753-bc3fffca8bf4?auto=format&w=800&q=80" alt="UK">
+                <div class="card-content">
+                    <h3>United Kingdom</h3>
+                    <p>Excellence in traditional education</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=australia'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1523482580672-f109ba8cb9be?auto=format&w=800&q=80"
+                    alt="Australia">
+                <div class="card-content">
+                    <h3>Australia</h3>
+                    <p>High quality of life and education</p>
+                </div>
+            </div>
+            <div class="destination-card" onclick="window.location.href='destination-detail.html?country=canada'">
+                <img class="card-image"
+                    src="https://images.unsplash.com/photo-1490623970972-ae8bb3da443e?auto=format&w=800&q=80"
+                    alt="Canada">
+                <div class="card-content">
+                    <h3>Canada</h3>
+                    <p>Affordable world-class education</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Global Scholars Gateway is a leading study abroad consultancy dedicated to helping students achieve
+                    their dreams of international education. With years of experience and a network of partner
+                    institutions worldwide, we provide comprehensive guidance and support throughout your journey.</p>
+                <ul class="achievements">
+                    <li><span>1000+</span> Students Placed</li>
+                    <li><span>50+</span> University Partners</li>
+                    <li><span>29+</span> Countries</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blogs Section -->
+    <section id="blogs" class="blogs">
+        <h2>Latest Blogs</h2>
+        <div class="blogs-grid">
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1517486808906-6ca8b3f04846" alt="Study in USA">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Feb 11, 2025</div>
+                    <h3>Guide to Student Life in the USA</h3>
+                    <p>Everything you need to know about campus life, accommodation, and cultural adaptation in the
+                        United States.</p>
+                    <a href="blog-detail.html?id=usa-guide" class="read-more">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" alt="Scholarship Tips">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Feb 10, 2025</div>
+                    <h3>Top Scholarship Opportunities 2025</h3>
+                    <p>Comprehensive guide to securing scholarships for international students in top universities.</p>
+                    <a href="blog-detail.html?id=scholarship-guide" class="read-more">Read More</a>
+                </div>
+            </article>
+            <article class="blog-card">
+                <div class="blog-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173" alt="IELTS Preparation">
+                </div>
+                <div class="blog-content">
+                    <div class="blog-date">Feb 9, 2025</div>
+                    <h3>IELTS Preparation Strategy</h3>
+                    <p>Expert tips and strategies to achieve your target score in IELTS examination.</p>
+                    <a href="blog-detail.html?id=ielts-guide" class="read-more">Read More</a>
+                </div>
+            </article>
+        </div>
+        <div class="center-button">
+            <a href="all-blogs.html" class="cta-button">View All Blogs</a>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="events" class="events">
+        <h2>Upcoming Events</h2>
+        <div class="events-grid">
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&w=800&q=80"
+                        alt="USA Education Fair">
+                    <!-- <div class="event-date">
+                        <span class="day">15</span>
+                        <span class="month">Feb</span>
+                    </div> -->
+                </div>
+                <div class="event-details">
+                    <h3>USA Education Fair 2025</h3>
+                    <p class="event-time"><i class="fas fa-clock"></i> 0:00 AM - 0:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Grand Hotel, City Center</p>
+                    <p>Meet representatives from top US universities and learn about admission processes.</p><br><br>
+                    <p>Register now to stay updated with upcoming events and never miss out on exciting opportunities! 👇</p>
+                    <a href="#" class="register-button">Register Now</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <div class="event-image">
+                    <img src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?auto=format&w=800&q=80"
+                        alt="Scholarship Workshop">
+                    <!-- <div class="event-date">
+                        <span class="day">20</span>
+                        <span class="month">Feb</span>
+                    </div> -->
+                </div>
+                <div class="event-details">
+                    <h3>Scholarship Workshop</h3>
+                    <p class="event-time"><i class="fas fa-clock"></i> 0:00 PM - 0:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Online Webinar</p>
+                    <p>Learn about various scholarship opportunities and application strategies.</p><br><br>
+                    <p>Register now to stay updated with upcoming events and never miss out on exciting opportunities! 👇</p>
+                    <a href="#" class="register-button">Register Now</a>
+                </div>
+            </div>
+            <div class="event-card">
+                <!-- <div class="event-date">
+                    <span class="day">25</span>
+                    <span class="month">Feb</span>
+                </div> -->
+                <div class="event-details">
+                    <h3>UK Universities Virtual Fair</h3>
+                    <p class="event-time"><i class="fas fa-clock"></i> 0:00 AM - 0:00 PM</p>
+                    <p class="event-location"><i class="fas fa-map-marker-alt"></i> Virtual Event</p>
+                    <p>Interactive sessions with UK university representatives and alumni.</p><br><br>
+                    <p>Register now to stay updated with upcoming events and never miss out on exciting opportunities! 👇</p>
+                    <a href="#" class="register-button">Register Now</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <div class="contact-container">
+            <form id="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <input type="tel" name="phone" placeholder="Phone Number">
+                <select name="destination" required>
+                    <option value="">Preferred Destination</option>
+                    <option value="usa">USA</option>
+                    <option value="uk">UK</option>
+                    <option value="australia">Australia</option>
+                    <option value="canada">Canada</option>
+                </select>
+                <textarea name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" class="cta-button">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Global Scholars Gateway</h3>
+                <p>Your trusted partner in international education</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#destinations">Destinations</a></li>
+                    <li><a href="#about">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <p><i class="fas fa-phone"></i> +1 234 567 890</p>
+                <p><i class="fas fa-envelope"></i> info.globalscholars@gmail.com</p>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Education Street, City</p>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Global Scholars Gateway. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Registration Modal -->
+    <div id="registrationModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h2>Event Registration</h2>
+            <form id="registrationForm">
+                <div class="form-group">
+                    <label for="firstName">First Name*</label>
+                    <input type="text" id="firstName" name="firstName" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name*</label>
+                    <input type="text" id="lastName" name="lastName" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone*</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City*</label>
+                    <input type="text" id="city" name="city" required>
+                </div>
+                <input type="hidden" id="eventName" name="eventName">
+                <button type="submit" class="cta-button">Register</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Thank You Modal -->
+    <div id="thankYouModal" class="modal thank-you-modal">
+        <div class="modal-content thank-you-content">
+            <span class="close-modal" id="closeThankYou">&times;</span>
+            <div class="thank-you-message">
+                <div class="thank-you-emoji">🎉</div>
+                <h2>Thank You!</h2>
+                <p id="thankYouText"></p>
+                <button class="cta-button" id="closeThankYouBtn">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="slideshow.js"></script>
+</body>
+
+</html>
